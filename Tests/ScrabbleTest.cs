@@ -59,5 +59,14 @@ namespace ScrabbleValueFinder.Objects
       int output = testScrabble.ScrabbleValues();
       Assert.Equal(expected, output);
     }
+
+    [Fact]
+    public void ScrabbleValue_ReturnedValueEight_valueeight()
+    {
+      Scrabble testScrabble = new Scrabble("job");
+      int expected = 12;
+      int output = testScrabble.ScrabbleValues();
+      Assert.Equal(expected, output);
+    }
   }
 }
