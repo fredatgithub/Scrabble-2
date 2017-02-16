@@ -29,6 +29,7 @@ namespace ScrabbleValueFinder.Objects
       _score = 0;
       char[] onePointArray = {'a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't'};
       char[] twoPointArray = {'d', 'g'};
+      char[] threePointArray = {'b', 'c', 'm', 'p'};
       for (int i = 0; i <= _wordLetterArray.Length-1; i++)
       {
         for (int j = 0; j <= onePointArray.Length-1; j++)
@@ -43,6 +44,14 @@ namespace ScrabbleValueFinder.Objects
           if (_wordLetterArray[i] == twoPointArray[k])
           {
             _score += 2;
+            Console.WriteLine(_score);
+          }
+        }
+        for (int c = 0; c <= threePointArray.Length-1; c++)
+        {
+          if (_wordLetterArray[i] == threePointArray[c])
+          {
+            _score += 3;
             Console.WriteLine(_score);
           }
         }
