@@ -1,3 +1,9 @@
 @{
     Layout="Shared/_Layout.cshtml";
 }
+
+<h3>Your word was:</h3>
+<h2>@Model.GetWord()</h2>
+
+<h3>In Scrabble, your word would have a score of:</h3>
+<h2>@Model.ScrabbleValues()</h2>
