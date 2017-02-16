@@ -9,12 +9,15 @@ namespace ScrabbleValueFinder.Objects
     private string _wordInput;
     private int _score;
     char[] _wordLetterArray;
+    private string _wordLower;
 
     //"Scrabble" in the next line is a constructor (doesn't take its name from the class)
     public Scrabble (string wordInput)
     {
       _wordInput = wordInput;
-      _wordLetterArray = _wordInput.ToCharArray();
+      _wordLower = _wordInput.ToLower();
+      Console.WriteLine(_wordLower);
+      _wordLetterArray = _wordLower.ToCharArray();
 
       Console.WriteLine(_wordLetterArray[0]);
     }

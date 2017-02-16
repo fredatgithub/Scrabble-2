@@ -24,3 +24,6 @@
 * _Step8: If the user inputs a word with characters with a value of 10, 8, 5, 4, 3, 2 or 1, the program will return the correct value of that word._
     * _Input: quiz_
     * _Output: 22_
+* _Step9: The program outputs the write value regardless of upper/lower case._
+    * _Input: Quiz_
+    * _Output: 22_

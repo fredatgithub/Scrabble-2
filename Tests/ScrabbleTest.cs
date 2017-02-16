@@ -78,5 +78,14 @@ namespace ScrabbleValueFinder.Objects
       int output = testScrabble.ScrabbleValues();
       Assert.Equal(expected, output);
     }
+
+    [Fact]
+    public void ScrabbleValue_ReturnedValueCaseInsensitive_correctvalue()
+    {
+      Scrabble testScrabble = new Scrabble("Quiz");
+      int expected = 22;
+      int output = testScrabble.ScrabbleValues();
+      Assert.Equal(expected, output);
+    }
   }
 }
