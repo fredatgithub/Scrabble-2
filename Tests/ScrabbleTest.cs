@@ -16,10 +16,19 @@ namespace ScrabbleValueFinder.Objects
     }
 
     [Fact]
-    public void ScrabbleValue_ReturnedSingleValueOne_singleValueOne()
+    public void ScrabbleValue_ReturnedValueOne_valueone()
     {
-      Scrabble testScrabble = new Scrabble("ad");
-      int expected = 1;
+      Scrabble testScrabble = new Scrabble("at");
+      int expected = 2;
+      int output = testScrabble.ScrabbleValues();
+      Assert.Equal(expected, output);
+    }
+
+    [Fact]
+    public void ScrabbleValue_ReturnedValueTwo_valuetwo()
+    {
+      Scrabble testScrabble = new Scrabble("dot");
+      int expected = 4;
       int output = testScrabble.ScrabbleValues();
       Assert.Equal(expected, output);
     }
